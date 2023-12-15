@@ -1,0 +1,8 @@
+msg/MdLibMsg.idl
+msg/MdLibMsg.msg
+msg/SdLibMsg.idl
+msg/SdLibMsg.msg
+srv/SolenoidStateSrv.idl
+srv/SolenoidStateSrv.srv
+srv/SolenoidStateSrv_Request.msg
+srv/SolenoidStateSrv_Response.msg

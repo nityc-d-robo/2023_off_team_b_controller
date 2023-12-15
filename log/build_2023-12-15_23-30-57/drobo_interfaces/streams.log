@@ -1,0 +1,255 @@
+[0.042s] Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces
+[0.088s] -- The C compiler identification is GNU 11.4.0
+[0.138s] -- The CXX compiler identification is GNU 11.4.0
+[0.148s] -- Detecting C compiler ABI info
+[0.202s] -- Detecting C compiler ABI info - done
+[0.208s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.208s] -- Detecting C compile features
+[0.208s] -- Detecting C compile features - done
+[0.211s] -- Detecting CXX compiler ABI info
+[0.278s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.284s] -- Detecting CXX compile features
+[0.284s] -- Detecting CXX compile features - done
+[0.287s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.571s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.625s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.646s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.648s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.653s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.684s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.867s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.944s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.043s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.063s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.065s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.088s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.088s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.088s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.088s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.105s] -- Found PythonExtra: .so  
+[1.136s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.156s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.167s] -- Added test 'lint_cmake' to check CMake code style
+[1.173s] -- Added test 'xmllint' to check XML markup files
+[1.177s] -- Configuring done
+[1.210s] -- Generating done
+[1.213s] -- Build files have been written to: /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces
+[1.224s] Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces
+[1.226s] Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces -- -j16 -l16
+[1.255s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.261s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.265s] [  4%] Built target ament_cmake_python_symlink_drobo_interfaces
+[1.480s] running egg_info
+[1.480s] creating drobo_interfaces.egg-info
+[1.480s] writing drobo_interfaces.egg-info/PKG-INFO
+[1.481s] writing dependency_links to drobo_interfaces.egg-info/dependency_links.txt
+[1.481s] writing top-level names to drobo_interfaces.egg-info/top_level.txt
+[1.481s] writing manifest file 'drobo_interfaces.egg-info/SOURCES.txt'
+[1.483s] reading manifest file 'drobo_interfaces.egg-info/SOURCES.txt'
+[1.483s] writing manifest file 'drobo_interfaces.egg-info/SOURCES.txt'
+[1.526s] [  4%] Built target ament_cmake_python_build_drobo_interfaces_egg
+[1.606s] [  4%] Built target drobo_interfaces__cpp
+[1.612s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.612s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.612s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.636s] [ 17%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/drobo_interfaces/msg/detail/sd_lib_msg__functions.c.o[0m
+[1.636s] [ 17%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/drobo_interfaces/srv/detail/solenoid_state_srv__functions.c.o[0m
+[1.636s] [ 17%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/drobo_interfaces/msg/detail/md_lib_msg__functions.c.o[0m
+[1.686s] [ 19%] [32m[1mLinking C shared library libdrobo_interfaces__rosidl_generator_c.so[0m
+[1.713s] [ 19%] Built target drobo_interfaces__rosidl_generator_c
+[1.720s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.720s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.720s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.916s] [ 29%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drobo_interfaces/srv/solenoid_state_srv__type_support.cpp.o[0m
+[1.916s] [ 29%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drobo_interfaces/msg/md_lib_msg__type_support.cpp.o[0m
+[1.917s] [ 31%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drobo_interfaces/msg/sd_lib_msg__type_support.cpp.o[0m
+[1.954s] [ 36%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drobo_interfaces/msg/detail/sd_lib_msg__type_support.cpp.o[0m
+[1.954s] [ 36%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drobo_interfaces/msg/detail/md_lib_msg__type_support.cpp.o[0m
+[1.954s] [ 38%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drobo_interfaces/srv/detail/solenoid_state_srv__type_support.cpp.o[0m
+[1.980s] [ 40%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/md_lib_msg__type_support.cpp.o[0m
+[1.981s] [ 44%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/srv/detail/dds_fastrtps/solenoid_state_srv__type_support.cpp.o[0m
+[1.981s] [ 44%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/sd_lib_msg__type_support.cpp.o[0m
+[2.077s] [ 51%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/drobo_interfaces/srv/solenoid_state_srv__type_support.cpp.o[0m
+[2.077s] [ 51%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/drobo_interfaces/msg/sd_lib_msg__type_support.cpp.o[0m
+[2.077s] [ 51%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/drobo_interfaces/msg/md_lib_msg__type_support.cpp.o[0m
+[2.098s] [ 55%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drobo_interfaces/msg/detail/md_lib_msg__type_support.c.o[0m
+[2.098s] [ 55%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drobo_interfaces/msg/detail/sd_lib_msg__type_support.c.o[0m
+[2.103s] [ 57%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drobo_interfaces/srv/detail/solenoid_state_srv__type_support.c.o[0m
+[2.124s] [ 59%] [32m[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_c.so[0m
+[2.161s] [ 61%] [32m[1mLinking C shared library libdrobo_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.184s] [ 61%] Built target drobo_interfaces__rosidl_typesupport_c
+[2.199s] [ 61%] Built target drobo_interfaces__rosidl_typesupport_introspection_c
+[2.212s] [ 63%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drobo_interfaces/msg/detail/md_lib_msg__type_support_c.cpp.o[0m
+[2.213s] [ 68%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drobo_interfaces/msg/detail/sd_lib_msg__type_support_c.cpp.o[0m
+[2.213s] [ 68%] [32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drobo_interfaces/srv/detail/solenoid_state_srv__type_support_c.cpp.o[0m
+[2.299s] [ 70%] [32m[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_cpp.so[0m
+[2.348s] [ 70%] Built target drobo_interfaces__rosidl_typesupport_cpp
+[2.457s] [ 72%] [32m[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.481s] [ 74%] [32m[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.535s] [ 74%] Built target drobo_interfaces__rosidl_typesupport_introspection_cpp
+[2.559s] [ 74%] Built target drobo_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.605s] [ 76%] [32m[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.658s] [ 76%] Built target drobo_interfaces__rosidl_typesupport_fastrtps_c
+[2.670s] [ 76%] Built target drobo_interfaces
+[2.685s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.159s] [ 78%] Built target drobo_interfaces__py
+[3.170s] [ 80%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/drobo_interfaces/msg/_md_lib_msg_s.c.o[0m
+[3.171s] [ 82%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/drobo_interfaces/msg/_sd_lib_msg_s.c.o[0m
+[3.171s] [ 85%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/drobo_interfaces/srv/_solenoid_state_srv_s.c.o[0m
+[3.250s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/drobo_interfaces/libdrobo_interfaces__rosidl_generator_py.so[0m
+[3.278s] [ 87%] Built target drobo_interfaces__rosidl_generator_py
+[3.288s] [ 91%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.288s] [ 91%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.288s] [ 93%] [32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.364s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.365s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.367s] [100%] [32m[1mLinking C shared library rosidl_generator_py/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.385s] [100%] Built target drobo_interfaces__rosidl_typesupport_c__pyext
+[3.385s] [100%] Built target drobo_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.388s] [100%] Built target drobo_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.394s] Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces -- -j16 -l16
+[3.500s] Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces
+[3.502s] -- Install configuration: ""
+[3.503s] -- Execute custom install script
+[3.503s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/rosidl_interfaces/drobo_interfaces
+[3.507s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__functions.h
+[3.510s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__struct.h
+[3.513s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__type_support.h
+[3.516s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__functions.h
+[3.520s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__struct.h
+[3.523s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__type_support.h
+[3.526s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/md_lib_msg.h
+[3.530s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.533s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/sd_lib_msg.h
+[3.537s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__functions.h
+[3.541s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__struct.h
+[3.546s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__type_support.h
+[3.549s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/solenoid_state_srv.h
+[3.553s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/library_path.sh
+[3.556s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/library_path.dsv
+[3.560s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_fastrtps_c.h
+[3.563s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_fastrtps_c.h
+[3.567s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.571s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_fastrtps_c.h
+[3.575s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_introspection_c.h
+[3.578s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_introspection_c.h
+[3.582s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.585s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_introspection_c.h
+[3.588s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__builder.hpp
+[3.592s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__struct.hpp
+[3.595s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__traits.hpp
+[3.598s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__builder.hpp
+[3.602s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__struct.hpp
+[3.606s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__traits.hpp
+[3.609s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/md_lib_msg.hpp
+[3.613s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/sd_lib_msg.hpp
+[3.616s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__builder.hpp
+[3.620s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__struct.hpp
+[3.624s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__traits.hpp
+[3.627s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/solenoid_state_srv.hpp
+[3.630s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[3.633s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[3.637s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.640s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_fastrtps_cpp.hpp
+[3.643s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_introspection_cpp.hpp
+[3.646s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_introspection_cpp.hpp
+[3.650s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_introspection_cpp.hpp
+[3.653s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/pythonpath.sh
+[3.656s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/pythonpath.dsv
+[3.660s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.664s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.668s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.672s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.677s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/__init__.py
+[3.681s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_c.c
+[3.685s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.688s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.693s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.696s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.700s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.704s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/libdrobo_interfaces__rosidl_generator_py.so
+[3.708s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/__init__.py
+[3.711s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_md_lib_msg.py
+[3.715s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_md_lib_msg_s.c
+[3.719s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_sd_lib_msg.py
+[3.722s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_sd_lib_msg_s.c
+[3.726s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/__init__.py
+[3.730s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/_solenoid_state_srv.py
+[3.733s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/_solenoid_state_srv_s.c
+[3.738s] -- Up-to-date symlink: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.738s] -- Up-to-date symlink: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.738s] -- Up-to-date symlink: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.739s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/MdLibMsg.idl
+[3.742s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/SdLibMsg.idl
+[3.746s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv.idl
+[3.750s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/MdLibMsg.msg
+[3.754s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/SdLibMsg.msg
+[3.757s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv.srv
+[3.760s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv_Request.msg
+[3.763s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv_Response.msg
+[3.766s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/package_run_dependencies/drobo_interfaces
+[3.770s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/parent_prefix_path/drobo_interfaces
+[3.774s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/ament_prefix_path.sh
+[3.778s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/ament_prefix_path.dsv
+[3.781s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/path.sh
+[3.786s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/path.dsv
+[3.789s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.bash
+[3.794s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.sh
+[3.798s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.zsh
+[3.801s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.dsv
+[3.804s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.dsv
+[3.808s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/packages/drobo_interfaces
+[3.812s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.815s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.820s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.823s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.827s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.830s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.834s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.838s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfacesConfig.cmake
+[3.841s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfacesConfig-version.cmake
+[3.845s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.xml
+[3.848s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_c.so
+[3.848s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_c.so" to ""
+[3.848s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.849s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.849s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_c.so
+[3.849s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.849s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_c.so
+[3.850s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_c.so" to ""
+[3.850s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.850s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.850s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.851s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.851s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_cpp.so
+[3.851s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.877s] Listing '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces'...
+[3.877s] Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/__init__.py'...
+[3.877s] Listing '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg'...
+[3.878s] Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/__init__.py'...
+[3.878s] Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_md_lib_msg.py'...
+[3.878s] Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_sd_lib_msg.py'...
+[3.878s] Listing '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv'...
+[3.878s] Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/__init__.py'...
+[3.878s] Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/_solenoid_state_srv.py'...
+[3.880s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_py.so
+[3.881s] -- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_py.so" to ""
+[3.881s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_cExport.cmake
+[3.881s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.881s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.881s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.882s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.882s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.882s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cExport.cmake
+[3.883s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.883s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_cppExport.cmake
+[3.884s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.884s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.884s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.884s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.885s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cppExport.cmake
+[3.885s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.885s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_pyExport.cmake
+[3.886s] -- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.888s] Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces

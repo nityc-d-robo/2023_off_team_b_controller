@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from drobo_interfaces/srv/SolenoidStateSrv.srv
+// generated code does not contain a copyright notice
+
+
+module drobo_interfaces {
+  module srv {
+    struct SolenoidStateSrv_Request {
+      uint8 axle_position;
+
+      int8 state;
+    };
+    typedef boolean boolean__3[3];
+    struct SolenoidStateSrv_Response {
+      @verbatim (language="comment", text=
+        "true: Up, false: Down;")
+      boolean result;
+
+      boolean__3 state;
+    };
+  };
+};

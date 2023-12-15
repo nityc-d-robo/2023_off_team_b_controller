@@ -1,0 +1,5 @@
+uint8 axle_position
+int8 state
+---
+bool result # true: Up, false: Down;
+bool[3] state

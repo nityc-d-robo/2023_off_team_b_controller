@@ -1,0 +1,2 @@
+source;share/dmotor_ros/environment/ament_prefix_path.sh
+source;share/dmotor_ros/environment/path.sh

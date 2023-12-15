@@ -1,0 +1,3 @@
+source;share/swerve_drive_control/hook/ament_prefix_path.ps1
+source;share/swerve_drive_control/hook/ament_prefix_path.dsv
+source;share/swerve_drive_control/hook/ament_prefix_path.sh

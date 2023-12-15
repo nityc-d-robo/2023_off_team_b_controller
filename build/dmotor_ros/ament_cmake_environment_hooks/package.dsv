@@ -1,0 +1,4 @@
+source;share/dmotor_ros/local_setup.bash
+source;share/dmotor_ros/local_setup.dsv
+source;share/dmotor_ros/local_setup.sh
+source;share/dmotor_ros/local_setup.zsh

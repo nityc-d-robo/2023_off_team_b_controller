@@ -1,0 +1,8 @@
+{
+  "package_name": "drobo_interfaces",
+  "non_idl_tuples": [
+    "/home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces:msg/MdLibMsg.msg",
+    "/home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces:msg/SdLibMsg.msg",
+    "/home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces:srv/SolenoidStateSrv.srv"
+  ]
+}

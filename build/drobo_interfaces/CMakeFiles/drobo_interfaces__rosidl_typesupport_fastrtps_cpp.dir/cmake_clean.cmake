@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/md_lib_msg__type_support.cpp.o"
+  "CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/md_lib_msg__type_support.cpp.o.d"
+  "CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/sd_lib_msg__type_support.cpp.o"
+  "CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/sd_lib_msg__type_support.cpp.o.d"
+  "CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/srv/detail/dds_fastrtps/solenoid_state_srv__type_support.cpp.o"
+  "CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/srv/detail/dds_fastrtps/solenoid_state_srv__type_support.cpp.o.d"
+  "libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/md_lib_msg__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/sd_lib_msg__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/drobo_interfaces/srv/detail/dds_fastrtps/solenoid_state_srv__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
