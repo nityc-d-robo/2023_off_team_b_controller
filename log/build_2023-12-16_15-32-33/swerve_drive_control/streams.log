@@ -1,0 +1,96 @@
+[0.060s] Invoking command in 'src/swerve_drive_control': CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros:/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch /home/kariya/.cargo/bin/cargo ament-build --install-base /home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control -- --manifest-path /home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control/Cargo.toml --target-dir /home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control --quiet --release
+[7.841s] [0m[1m[33mwarning[0m[0m[1m: unused import: `pr_info`[0m
+[7.841s] [0m [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:2:56[0m
+[7.841s] [0m  [0m[0m[1m[38;5;12m|[0m
+[7.841s] [0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    context::Context, error::DynError, logger::Logger, pr_info[0m
+[7.841s] [0m  [0m[0m[1m[38;5;12m| [0m[0m                                                       [0m[0m[1m[33m^^^^^^^[0m
+[7.841s] [0m  [0m[0m[1m[38;5;12m|[0m
+[7.841s] [0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_imports)]` on by default[0m
+[7.841s] 
+[7.841s] [0m[1m[33mwarning[0m[0m[1m: unused import: `num_traits::pow::Pow`[0m
+[7.842s] [0m [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:5:5[0m
+[7.842s] [0m  [0m[0m[1m[38;5;12m|[0m
+[7.842s] [0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0muse num_traits::pow::Pow;[0m
+[7.842s] [0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^[0m
+[7.842s] 
+[7.850s] [0m[1m[33mwarning[0m[0m[1m: unused variable: `publisher`[0m
+[7.850s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:25:9[0m
+[7.850s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.850s] [0m[1m[38;5;12m25[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let publisher = node.create_publisher::<drobo_interfaces::msg::MdLibMsg>("md_driver_topic", None)?;[0m
+[7.850s] [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_publisher`[0m
+[7.850s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.850s] [0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
+[7.850s] 
+[7.850s] [0m[1m[33mwarning[0m[0m[1m: unused variable: `logger`[0m
+[7.850s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:28:9[0m
+[7.850s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.850s] [0m[1m[38;5;12m28[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let logger = Logger::new("swere_drive_control");[0m
+[7.850s] [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_logger`[0m
+[7.850s] 
+[7.850s] [0m[1m[33mwarning[0m[0m[1m: unused variable: `msg`[0m
+[7.851s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:30:13[0m
+[7.851s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.851s] [0m[1m[38;5;12m30[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();[0m
+[7.851s] [0m   [0m[0m[1m[38;5;12m| [0m[0m            [0m[0m[1m[33m^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_msg`[0m
+[7.851s] 
+[7.851s] [0m[1m[33mwarning[0m[0m[1m: variable does not need to be mutable[0m
+[7.851s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:30:9[0m
+[7.851s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.851s] [0m[1m[38;5;12m30[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[38;5;12m----[0m[0m[1m[33m^^^[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[38;5;12m|[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[38;5;12mhelp: remove this `mut`[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_mut)]` on by default[0m
+[7.852s] 
+[7.852s] [0m[1m[33mwarning[0m[0m[1m: unused variable: `speed_abs`[0m
+[7.852s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:40:9[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.852s] [0m[1m[38;5;12m40[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let speed_abs: f64 = (_xrpm*_xrpm +_yrpm*_yrpm).sqrt();[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_speed_abs`[0m
+[7.852s] 
+[7.852s] [0m[1m[33mwarning[0m[0m[1m: unused variable: `rad`[0m
+[7.852s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:41:9[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.852s] [0m[1m[38;5;12m41[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let rad: f64 = _yrpm.atan2(_xrpm);[0m
+[7.852s] [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_rad`[0m
+[7.852s] 
+[7.853s] [0m[1m[33mwarning[0m[0m[1m: constant `WHEEL_DIA` is never used[0m
+[7.853s] [0m [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:9:8[0m
+[7.853s] [0m  [0m[0m[1m[38;5;12m|[0m
+[7.853s] [0m[1m[38;5;12m9[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mconst  WHEEL_DIA: f64 = 0.100;      //ホイールの直径［m］[0m
+[7.853s] [0m  [0m[0m[1m[38;5;12m| [0m[0m       [0m[0m[1m[33m^^^^^^^^^[0m
+[7.854s] [0m  [0m[0m[1m[38;5;12m|[0m
+[7.854s] [0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(dead_code)]` on by default[0m
+[7.854s] 
+[7.854s] [0m[1m[33mwarning[0m[0m[1m: constant `ROBOT_CENTER_TO_WHEEL_DISTANCE` is never used[0m
+[7.854s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:10:8[0m
+[7.854s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.854s] [0m[1m[38;5;12m10[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mconst  ROBOT_CENTER_TO_WHEEL_DISTANCE: f64 = 0.37;  //ロボットの中心からホイールまでの距離[m][0m
+[7.854s] [0m   [0m[0m[1m[38;5;12m| [0m[0m       [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[7.854s] 
+[7.854s] [0m[1m[33mwarning[0m[0m[1m: struct `Component` is never constructed[0m
+[7.854s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:12:8[0m
+[7.854s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.854s] [0m[1m[38;5;12m12[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mstruct Component {[0m
+[7.854s] [0m   [0m[0m[1m[38;5;12m| [0m[0m       [0m[0m[1m[33m^^^^^^^^^[0m
+[7.854s] 
+[7.854s] [0m[1m[33mwarning[0m[0m[1m: function `move_chassis` is never used[0m
+[7.854s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:39:4[0m
+[7.854s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.854s] [0m[1m[38;5;12m39[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn move_chassis(_xrpm: f64, _yrpm: f64, _yaw: f64) {[0m
+[7.854s] [0m   [0m[0m[1m[38;5;12m| [0m[0m   [0m[0m[1m[33m^^^^^^^^^^^^[0m
+[7.855s] 
+[7.855s] [0m[1m[33mwarning[0m[0m[1m: function `move_wheel` is never used[0m
+[7.855s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:82:4[0m
+[7.855s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.855s] [0m[1m[38;5;12m82[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn move_wheel(_wheel_yaw: f64, _power: i64){[0m
+[7.855s] [0m   [0m[0m[1m[38;5;12m| [0m[0m   [0m[0m[1m[33m^^^^^^^^^^[0m
+[7.855s] 
+[7.855s] [0m[1m[33mwarning[0m[0m[1m: function `send_pwm` is never used[0m
+[7.855s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:87:4[0m
+[7.855s] [0m   [0m[0m[1m[38;5;12m|[0m
+[7.855s] [0m[1m[38;5;12m87[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn send_pwm(_adress: u8, _semi_id: u8, _phase: bool, _power: u16){[0m
+[7.855s] [0m   [0m[0m[1m[38;5;12m| [0m[0m   [0m[0m[1m[33m^^^^^^^^[0m
+[7.855s] 
+[8.243s] Invoked command in 'src/swerve_drive_control' returned '0': CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros:/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch /home/kariya/.cargo/bin/cargo ament-build --install-base /home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control -- --manifest-path /home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control/Cargo.toml --target-dir /home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control --quiet --release

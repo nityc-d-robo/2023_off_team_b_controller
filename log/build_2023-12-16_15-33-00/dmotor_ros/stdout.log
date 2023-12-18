@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/dmotor_ros.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable dmotor_ros[0m
+[100%] Built target dmotor_ros
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/lib/dmotor_ros/dmotor_ros
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/ament_index/resource_index/package_run_dependencies/dmotor_ros
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/ament_index/resource_index/parent_prefix_path/dmotor_ros
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/ament_prefix_path.sh
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/ament_prefix_path.dsv
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/path.sh
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/path.dsv
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.bash
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.sh
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.zsh
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.dsv
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/package.dsv
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/ament_index/resource_index/packages/dmotor_ros
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/cmake/dmotor_rosConfig.cmake
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/cmake/dmotor_rosConfig-version.cmake
+-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/package.xml

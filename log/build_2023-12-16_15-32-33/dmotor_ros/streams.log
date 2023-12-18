@@ -1,0 +1,52 @@
+[0.088s] Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros': CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros:/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch:/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control:/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/dmotor_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros
+[0.130s] -- The C compiler identification is GNU 11.4.0
+[0.176s] -- The CXX compiler identification is GNU 11.4.0
+[0.184s] -- Detecting C compiler ABI info
+[0.243s] -- Detecting C compiler ABI info - done
+[0.280s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.280s] -- Detecting C compile features
+[0.280s] -- Detecting C compile features - done
+[0.289s] -- Detecting CXX compiler ABI info
+[0.454s] -- Detecting CXX compiler ABI info - done
+[0.472s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.473s] -- Detecting CXX compile features
+[0.474s] -- Detecting CXX compile features - done
+[0.479s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.890s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.973s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.032s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[1.107s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.116s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.130s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.172s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.263s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.266s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.387s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.442s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.521s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.533s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.649s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.651s] -- Found Threads: TRUE  
+[1.877s] -- Found drobo_interfaces: 0.0.0 (/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake)
+[1.898s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.989s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.993s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.993s] -- Configured cppcheck include dirs: /home/kariya/Git/2023_off_team_b_controller/src/dmotor_ros/include
+[1.994s] -- Configured cppcheck exclude dirs and/or files: 
+[1.999s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.000s] -- Configured cpplint exclude dirs and/or files: 
+[2.002s] -- Added test 'lint_cmake' to check CMake code style
+[2.008s] -- Added test 'uncrustify' to check C / C++ code style
+[2.008s] -- Configured uncrustify additional arguments: 
+[2.009s] -- Added test 'xmllint' to check XML markup files
+[2.011s] -- Configuring done
+[2.024s] -- Generating done
+[2.026s] -- Build files have been written to: /home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros
+[2.039s] Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros' returned '0': CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros:/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch:/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control:/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/dmotor_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros
+[2.041s] Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros': CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros:/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch:/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control:/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros -- -j16 -l16
+[2.071s] [ 50%] [32mBuilding CXX object CMakeFiles/dmotor_ros.dir/src/main.cpp.o[0m
+[8.628s] gmake[2]: *** [CMakeFiles/dmotor_ros.dir/build.make:76: CMakeFiles/dmotor_ros.dir/src/main.cpp.o] 割り込み
+[8.629s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmotor_ros.dir/all] 割り込み
+[8.629s] gmake: *** [Makefile:146: all] 割り込み
+[8.690s] Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros' returned '-2': CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros:/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch:/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control:/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros -- -j16 -l16

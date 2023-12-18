@@ -1,0 +1,25 @@
+[0.075s] Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros -- -j16 -l16
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/dmotor_ros.dir/src/main.cpp.o[0m
+[7.432s] [100%] [32m[1mLinking CXX executable dmotor_ros[0m
+[7.760s] [100%] Built target dmotor_ros
+[7.765s] Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros' returned '0': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros -- -j16 -l16
+[7.784s] Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros
+[7.787s] -- Install configuration: ""
+[7.787s] -- Execute custom install script
+[7.787s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/lib/dmotor_ros/dmotor_ros
+[7.790s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/ament_index/resource_index/package_run_dependencies/dmotor_ros
+[7.793s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/ament_index/resource_index/parent_prefix_path/dmotor_ros
+[7.796s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/ament_prefix_path.sh
+[7.799s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/ament_prefix_path.dsv
+[7.802s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/path.sh
+[7.806s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/environment/path.dsv
+[7.809s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.bash
+[7.811s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.sh
+[7.814s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.zsh
+[7.818s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/local_setup.dsv
+[7.821s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/package.dsv
+[7.825s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/ament_index/resource_index/packages/dmotor_ros
+[7.827s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/cmake/dmotor_rosConfig.cmake
+[7.830s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/cmake/dmotor_rosConfig-version.cmake
+[7.833s] -- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/dmotor_ros/share/dmotor_ros/package.xml
+[7.838s] Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros' returned '0': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/dmotor_ros
