@@ -1,0 +1,533 @@
+[0.000000] (-) TimerEvent: {}
+[0.000574] (controller_2023_b_launch) JobQueued: {'identifier': 'controller_2023_b_launch', 'dependencies': OrderedDict()}
+[0.000607] (drobo_interfaces) JobQueued: {'identifier': 'drobo_interfaces', 'dependencies': OrderedDict()}
+[0.000644] (swerve_drive_control) JobQueued: {'identifier': 'swerve_drive_control', 'dependencies': OrderedDict([('drobo_interfaces', '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces')])}
+[0.000734] (drobo_interfaces) JobStarted: {'identifier': 'drobo_interfaces'}
+[0.033981] (controller_2023_b_launch) JobStarted: {'identifier': 'controller_2023_b_launch'}
+[0.065076] (drobo_interfaces) JobProgress: {'identifier': 'drobo_interfaces', 'progress': 'cmake'}
+[0.065381] (drobo_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces'], 'cwd': '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces', 'env': OrderedDict([('USER', 'kariya'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kariya/Git'), ('HOME', '/home/kariya'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '1981'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ZPFX', '/home/kariya/.local/share/zinit/polaris'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kariya'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kariya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('ZSH_CACHE_DIR', '/home/kariya/.cache/zinit'), ('PMSPEC', '0uUpiPsf'), ('PATH', '/home/kariya/.local/share/zinit/plugins/paulirish---git-open:/opt/ros/humble/bin:/home/kariya/.local/share/zinit/polaris/bin:/home/kariya/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kariya-Inspiron-14-5425:@/tmp/.ICE-unix/1952,unix/kariya-Inspiron-14-5425:/tmp/.ICE-unix/1952'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9c1f2aee_3c3f_426e_a34e_8afdda157244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UTNMG2'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.068196] (controller_2023_b_launch) JobProgress: {'identifier': 'controller_2023_b_launch', 'progress': 'cmake'}
+[0.068865] (controller_2023_b_launch) Command: {'cmd': ['/usr/bin/cmake', '/home/kariya/Git/2023_off_team_b_controller/src/controller_2023_b_launch', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch'], 'cwd': '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch', 'env': OrderedDict([('USER', 'kariya'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kariya/Git'), ('HOME', '/home/kariya'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '1981'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ZPFX', '/home/kariya/.local/share/zinit/polaris'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kariya'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kariya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('ZSH_CACHE_DIR', '/home/kariya/.cache/zinit'), ('PMSPEC', '0uUpiPsf'), ('PATH', '/home/kariya/.local/share/zinit/plugins/paulirish---git-open:/opt/ros/humble/bin:/home/kariya/.local/share/zinit/polaris/bin:/home/kariya/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kariya-Inspiron-14-5425:@/tmp/.ICE-unix/1952,unix/kariya-Inspiron-14-5425:/tmp/.ICE-unix/1952'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9c1f2aee_3c3f_426e_a34e_8afdda157244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UTNMG2'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099825] (-) TimerEvent: {}
+[0.142841] (controller_2023_b_launch) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.143239] (drobo_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199962] (-) TimerEvent: {}
+[0.210471] (controller_2023_b_launch) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.210908] (drobo_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.221812] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.222023] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.278849] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.279098] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.284209] (controller_2023_b_launch) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.284339] (drobo_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.284528] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.284612] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.284863] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.284964] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.287645] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.287760] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300064] (-) TimerEvent: {}
+[0.349130] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.349455] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.355736] (drobo_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.356060] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.356376] (drobo_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.358462] (controller_2023_b_launch) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.358702] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.359068] (controller_2023_b_launch) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.361689] (controller_2023_b_launch) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.361808] (drobo_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400181] (-) TimerEvent: {}
+[0.500546] (-) TimerEvent: {}
+[0.601300] (-) TimerEvent: {}
+[0.624493] (controller_2023_b_launch) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.624785] (drobo_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.675205] (controller_2023_b_launch) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.675486] (drobo_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.701414] (-) TimerEvent: {}
+[0.724247] (controller_2023_b_launch) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.724531] (drobo_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.728093] (drobo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.734967] (drobo_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.775733] (drobo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.786649] (controller_2023_b_launch) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.788023] (controller_2023_b_launch) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.789650] (controller_2023_b_launch) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.792672] (controller_2023_b_launch) StdoutLine: {'line': b'-- Generating done\n'}
+[0.793499] (controller_2023_b_launch) StdoutLine: {'line': b'-- Build files have been written to: /home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch\n'}
+[0.798187] (controller_2023_b_launch) CommandEnded: {'returncode': 0}
+[0.798788] (controller_2023_b_launch) JobProgress: {'identifier': 'controller_2023_b_launch', 'progress': 'build'}
+[0.799605] (controller_2023_b_launch) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch', '--', '-j16', '-l16'], 'cwd': '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch', 'env': OrderedDict([('USER', 'kariya'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kariya/Git'), ('HOME', '/home/kariya'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '1981'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ZPFX', '/home/kariya/.local/share/zinit/polaris'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kariya'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kariya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('ZSH_CACHE_DIR', '/home/kariya/.cache/zinit'), ('PMSPEC', '0uUpiPsf'), ('PATH', '/home/kariya/.local/share/zinit/plugins/paulirish---git-open:/opt/ros/humble/bin:/home/kariya/.local/share/zinit/polaris/bin:/home/kariya/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kariya-Inspiron-14-5425:@/tmp/.ICE-unix/1952,unix/kariya-Inspiron-14-5425:/tmp/.ICE-unix/1952'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9c1f2aee_3c3f_426e_a34e_8afdda157244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UTNMG2'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.801485] (-) TimerEvent: {}
+[0.817819] (controller_2023_b_launch) CommandEnded: {'returncode': 0}
+[0.833757] (controller_2023_b_launch) JobProgress: {'identifier': 'controller_2023_b_launch', 'progress': 'install'}
+[0.838341] (controller_2023_b_launch) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch'], 'cwd': '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch', 'env': OrderedDict([('USER', 'kariya'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kariya/Git'), ('HOME', '/home/kariya'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '1981'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ZPFX', '/home/kariya/.local/share/zinit/polaris'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kariya'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kariya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('ZSH_CACHE_DIR', '/home/kariya/.cache/zinit'), ('PMSPEC', '0uUpiPsf'), ('PATH', '/home/kariya/.local/share/zinit/plugins/paulirish---git-open:/opt/ros/humble/bin:/home/kariya/.local/share/zinit/polaris/bin:/home/kariya/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kariya-Inspiron-14-5425:@/tmp/.ICE-unix/1952,unix/kariya-Inspiron-14-5425:/tmp/.ICE-unix/1952'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9c1f2aee_3c3f_426e_a34e_8afdda157244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UTNMG2'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.841116] (controller_2023_b_launch) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.841513] (controller_2023_b_launch) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.841961] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch//launch/controller_2023_b.launch.xml\n'}
+[0.845597] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/ament_index/resource_index/package_run_dependencies/controller_2023_b_launch\n'}
+[0.848775] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/ament_index/resource_index/parent_prefix_path/controller_2023_b_launch\n'}
+[0.852363] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/environment/ament_prefix_path.sh\n'}
+[0.856829] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/environment/ament_prefix_path.dsv\n'}
+[0.861352] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/environment/path.sh\n'}
+[0.865365] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/environment/path.dsv\n'}
+[0.868960] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/local_setup.bash\n'}
+[0.873135] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/local_setup.sh\n'}
+[0.876513] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/local_setup.zsh\n'}
+[0.879517] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/local_setup.dsv\n'}
+[0.882479] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.dsv\n'}
+[0.885656] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/ament_index/resource_index/packages/controller_2023_b_launch\n'}
+[0.889147] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/cmake/controller_2023_b_launchConfig.cmake\n'}
+[0.892887] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/cmake/controller_2023_b_launchConfig-version.cmake\n'}
+[0.896695] (controller_2023_b_launch) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.xml\n'}
+[0.901846] (controller_2023_b_launch) CommandEnded: {'returncode': 0}
+[0.902262] (-) TimerEvent: {}
+[0.971004] (drobo_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.003350] (-) TimerEvent: {}
+[1.005505] (controller_2023_b_launch) JobEnded: {'identifier': 'controller_2023_b_launch', 'rc': 0}
+[1.043365] (drobo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.103471] (-) TimerEvent: {}
+[1.128814] (drobo_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.146166] (drobo_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.147573] (drobo_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.169474] (drobo_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.169625] (drobo_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.169690] (drobo_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.169747] (drobo_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.185512] (drobo_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.203577] (-) TimerEvent: {}
+[1.213112] (drobo_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.232692] (drobo_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.239717] (drobo_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.243363] (drobo_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.246848] (drobo_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.277664] (drobo_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.280362] (drobo_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces\n'}
+[1.290941] (drobo_interfaces) CommandEnded: {'returncode': 0}
+[1.291554] (drobo_interfaces) JobProgress: {'identifier': 'drobo_interfaces', 'progress': 'build'}
+[1.292718] (drobo_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces', 'env': OrderedDict([('USER', 'kariya'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kariya/Git'), ('HOME', '/home/kariya'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '1981'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ZPFX', '/home/kariya/.local/share/zinit/polaris'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kariya'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kariya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('ZSH_CACHE_DIR', '/home/kariya/.cache/zinit'), ('PMSPEC', '0uUpiPsf'), ('PATH', '/home/kariya/.local/share/zinit/plugins/paulirish---git-open:/opt/ros/humble/bin:/home/kariya/.local/share/zinit/polaris/bin:/home/kariya/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kariya-Inspiron-14-5425:@/tmp/.ICE-unix/1952,unix/kariya-Inspiron-14-5425:/tmp/.ICE-unix/1952'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9c1f2aee_3c3f_426e_a34e_8afdda157244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UTNMG2'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.303639] (-) TimerEvent: {}
+[1.314462] (drobo_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.318891] (drobo_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.322047] (drobo_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_drobo_interfaces\n'}
+[1.403772] (-) TimerEvent: {}
+[1.504087] (-) TimerEvent: {}
+[1.512049] (drobo_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.512522] (drobo_interfaces) StdoutLine: {'line': b'creating drobo_interfaces.egg-info\n'}
+[1.512699] (drobo_interfaces) StdoutLine: {'line': b'writing drobo_interfaces.egg-info/PKG-INFO\n'}
+[1.512922] (drobo_interfaces) StdoutLine: {'line': b'writing dependency_links to drobo_interfaces.egg-info/dependency_links.txt\n'}
+[1.513131] (drobo_interfaces) StdoutLine: {'line': b'writing top-level names to drobo_interfaces.egg-info/top_level.txt\n'}
+[1.513293] (drobo_interfaces) StdoutLine: {'line': b"writing manifest file 'drobo_interfaces.egg-info/SOURCES.txt'\n"}
+[1.515353] (drobo_interfaces) StdoutLine: {'line': b"reading manifest file 'drobo_interfaces.egg-info/SOURCES.txt'\n"}
+[1.515780] (drobo_interfaces) StdoutLine: {'line': b"writing manifest file 'drobo_interfaces.egg-info/SOURCES.txt'\n"}
+[1.536526] (drobo_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_drobo_interfaces_egg\n'}
+[1.604190] (-) TimerEvent: {}
+[1.622313] (drobo_interfaces) StdoutLine: {'line': b'[  4%] Built target drobo_interfaces__cpp\n'}
+[1.627291] (drobo_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.627509] (drobo_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.627586] (drobo_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.648218] (drobo_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/drobo_interfaces/msg/detail/sd_lib_msg__functions.c.o\x1b[0m\n'}
+[1.648432] (drobo_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/drobo_interfaces/msg/detail/md_lib_msg__functions.c.o\x1b[0m\n'}
+[1.648524] (drobo_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_c.dir/rosidl_generator_c/drobo_interfaces/srv/detail/solenoid_state_srv__functions.c.o\x1b[0m\n'}
+[1.702044] (drobo_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libdrobo_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.704269] (-) TimerEvent: {}
+[1.727514] (drobo_interfaces) StdoutLine: {'line': b'[ 19%] Built target drobo_interfaces__rosidl_generator_c\n'}
+[1.732793] (drobo_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.733010] (drobo_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.733108] (drobo_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.804380] (-) TimerEvent: {}
+[1.904681] (-) TimerEvent: {}
+[1.917325] (drobo_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drobo_interfaces/srv/solenoid_state_srv__type_support.cpp.o\x1b[0m\n'}
+[1.917550] (drobo_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drobo_interfaces/msg/md_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[1.917659] (drobo_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/drobo_interfaces/msg/sd_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[1.948874] (drobo_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drobo_interfaces/msg/detail/md_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[1.949336] (drobo_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drobo_interfaces/msg/detail/sd_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[1.949615] (drobo_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/drobo_interfaces/srv/detail/solenoid_state_srv__type_support.cpp.o\x1b[0m\n'}
+[1.976695] (drobo_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/md_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[1.977571] (drobo_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/msg/detail/dds_fastrtps/sd_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[1.977801] (drobo_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/drobo_interfaces/srv/detail/dds_fastrtps/solenoid_state_srv__type_support.cpp.o\x1b[0m\n'}
+[2.004800] (-) TimerEvent: {}
+[2.043537] (drobo_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/drobo_interfaces/msg/sd_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[2.043825] (drobo_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/drobo_interfaces/msg/md_lib_msg__type_support.cpp.o\x1b[0m\n'}
+[2.043987] (drobo_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/drobo_interfaces/srv/solenoid_state_srv__type_support.cpp.o\x1b[0m\n'}
+[2.081216] (drobo_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.104926] (-) TimerEvent: {}
+[2.119668] (drobo_interfaces) StdoutLine: {'line': b'[ 53%] Built target drobo_interfaces__rosidl_typesupport_c\n'}
+[2.194301] (drobo_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drobo_interfaces/msg/detail/md_lib_msg__type_support.c.o\x1b[0m\n'}
+[2.194586] (drobo_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drobo_interfaces/msg/detail/sd_lib_msg__type_support.c.o\x1b[0m\n'}
+[2.194700] (drobo_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/drobo_interfaces/srv/detail/solenoid_state_srv__type_support.c.o\x1b[0m\n'}
+[2.194848] (drobo_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drobo_interfaces/msg/detail/md_lib_msg__type_support_c.cpp.o\x1b[0m\n'}
+[2.194943] (drobo_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drobo_interfaces/msg/detail/sd_lib_msg__type_support_c.cpp.o\x1b[0m\n'}
+[2.195153] (drobo_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/drobo_interfaces/srv/detail/solenoid_state_srv__type_support_c.cpp.o\x1b[0m\n'}
+[2.205089] (-) TimerEvent: {}
+[2.243908] (drobo_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libdrobo_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.267809] (drobo_interfaces) StdoutLine: {'line': b'[ 68%] Built target drobo_interfaces__rosidl_typesupport_introspection_c\n'}
+[2.300536] (drobo_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.305203] (-) TimerEvent: {}
+[2.334155] (drobo_interfaces) StdoutLine: {'line': b'[ 70%] Built target drobo_interfaces__rosidl_typesupport_cpp\n'}
+[2.405360] (-) TimerEvent: {}
+[2.435093] (drobo_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.469552] (drobo_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.500538] (drobo_interfaces) StdoutLine: {'line': b'[ 74%] Built target drobo_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.505477] (-) TimerEvent: {}
+[2.532509] (drobo_interfaces) StdoutLine: {'line': b'[ 74%] Built target drobo_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.566094] (drobo_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libdrobo_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.605586] (-) TimerEvent: {}
+[2.617562] (drobo_interfaces) StdoutLine: {'line': b'[ 76%] Built target drobo_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.627114] (drobo_interfaces) StdoutLine: {'line': b'[ 76%] Built target drobo_interfaces\n'}
+[2.638136] (drobo_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.705682] (-) TimerEvent: {}
+[2.805926] (-) TimerEvent: {}
+[2.906162] (-) TimerEvent: {}
+[3.006379] (-) TimerEvent: {}
+[3.106731] (-) TimerEvent: {}
+[3.114679] (drobo_interfaces) StdoutLine: {'line': b'[ 78%] Built target drobo_interfaces__py\n'}
+[3.124538] (drobo_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/drobo_interfaces/msg/_md_lib_msg_s.c.o\x1b[0m\n'}
+[3.124698] (drobo_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/drobo_interfaces/msg/_sd_lib_msg_s.c.o\x1b[0m\n'}
+[3.125026] (drobo_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_generator_py.dir/rosidl_generator_py/drobo_interfaces/srv/_solenoid_state_srv_s.c.o\x1b[0m\n'}
+[3.206833] (-) TimerEvent: {}
+[3.218237] (drobo_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/drobo_interfaces/libdrobo_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[3.246747] (drobo_interfaces) StdoutLine: {'line': b'[ 87%] Built target drobo_interfaces__rosidl_generator_py\n'}
+[3.256078] (drobo_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.256299] (drobo_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.256370] (drobo_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/drobo_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.306938] (-) TimerEvent: {}
+[3.326494] (drobo_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.326746] (drobo_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.331141] (drobo_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.346706] (drobo_interfaces) StdoutLine: {'line': b'[100%] Built target drobo_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[3.346924] (drobo_interfaces) StdoutLine: {'line': b'[100%] Built target drobo_interfaces__rosidl_typesupport_c__pyext\n'}
+[3.351435] (drobo_interfaces) StdoutLine: {'line': b'[100%] Built target drobo_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.357431] (drobo_interfaces) CommandEnded: {'returncode': 0}
+[3.407035] (-) TimerEvent: {}
+[3.455784] (drobo_interfaces) JobProgress: {'identifier': 'drobo_interfaces', 'progress': 'install'}
+[3.456503] (drobo_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces'], 'cwd': '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces', 'env': OrderedDict([('USER', 'kariya'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kariya/Git'), ('HOME', '/home/kariya'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '1981'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ZPFX', '/home/kariya/.local/share/zinit/polaris'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kariya'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kariya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('ZSH_CACHE_DIR', '/home/kariya/.cache/zinit'), ('PMSPEC', '0uUpiPsf'), ('PATH', '/home/kariya/.local/share/zinit/plugins/paulirish---git-open:/opt/ros/humble/bin:/home/kariya/.local/share/zinit/polaris/bin:/home/kariya/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kariya-Inspiron-14-5425:@/tmp/.ICE-unix/1952,unix/kariya-Inspiron-14-5425:/tmp/.ICE-unix/1952'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9c1f2aee_3c3f_426e_a34e_8afdda157244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UTNMG2'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.459540] (drobo_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.460034] (drobo_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.460323] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/rosidl_interfaces/drobo_interfaces\n'}
+[3.463974] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__functions.h\n'}
+[3.467356] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__struct.h\n'}
+[3.470646] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__type_support.h\n'}
+[3.473658] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__functions.h\n'}
+[3.476706] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__struct.h\n'}
+[3.479494] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__type_support.h\n'}
+[3.482717] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/md_lib_msg.h\n'}
+[3.485843] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.488936] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/sd_lib_msg.h\n'}
+[3.492039] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__functions.h\n'}
+[3.495339] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__struct.h\n'}
+[3.498788] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__type_support.h\n'}
+[3.501772] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/solenoid_state_srv.h\n'}
+[3.505000] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/library_path.sh\n'}
+[3.507158] (-) TimerEvent: {}
+[3.508724] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/library_path.dsv\n'}
+[3.513337] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[3.516769] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[3.519447] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.522762] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_fastrtps_c.h\n'}
+[3.526036] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_introspection_c.h\n'}
+[3.529208] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_introspection_c.h\n'}
+[3.533105] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.537067] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_introspection_c.h\n'}
+[3.541371] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__builder.hpp\n'}
+[3.544311] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__struct.hpp\n'}
+[3.548059] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__traits.hpp\n'}
+[3.551360] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__builder.hpp\n'}
+[3.554792] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__struct.hpp\n'}
+[3.557826] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__traits.hpp\n'}
+[3.560920] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/md_lib_msg.hpp\n'}
+[3.564511] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/sd_lib_msg.hpp\n'}
+[3.567426] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__builder.hpp\n'}
+[3.570485] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__struct.hpp\n'}
+[3.573780] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__traits.hpp\n'}
+[3.576893] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/solenoid_state_srv.hpp\n'}
+[3.581322] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.585086] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.588967] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.591640] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.594926] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.598865] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.601921] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/include/drobo_interfaces/drobo_interfaces/srv/detail/solenoid_state_srv__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.604979] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/pythonpath.sh\n'}
+[3.607220] (-) TimerEvent: {}
+[3.607809] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/pythonpath.dsv\n'}
+[3.611851] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.616038] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.619674] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.622865] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.626532] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/__init__.py\n'}
+[3.629638] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.632933] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.635760] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/_drobo_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.638997] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.641960] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.644932] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.647883] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/libdrobo_interfaces__rosidl_generator_py.so\n'}
+[3.651907] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/__init__.py\n'}
+[3.654981] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_md_lib_msg.py\n'}
+[3.658000] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_md_lib_msg_s.c\n'}
+[3.661025] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_sd_lib_msg.py\n'}
+[3.663799] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_sd_lib_msg_s.c\n'}
+[3.667048] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/__init__.py\n'}
+[3.671004] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/_solenoid_state_srv.py\n'}
+[3.674026] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/_solenoid_state_srv_s.c\n'}
+[3.676876] (drobo_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.677201] (drobo_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.677473] (drobo_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/drobo_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.677648] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/MdLibMsg.idl\n'}
+[3.681043] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/SdLibMsg.idl\n'}
+[3.685719] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv.idl\n'}
+[3.688979] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/MdLibMsg.msg\n'}
+[3.692402] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/msg/SdLibMsg.msg\n'}
+[3.695456] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv.srv\n'}
+[3.698478] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv_Request.msg\n'}
+[3.701762] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/srv/SolenoidStateSrv_Response.msg\n'}
+[3.705153] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/package_run_dependencies/drobo_interfaces\n'}
+[3.707300] (-) TimerEvent: {}
+[3.707950] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/parent_prefix_path/drobo_interfaces\n'}
+[3.711718] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/ament_prefix_path.sh\n'}
+[3.715429] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/ament_prefix_path.dsv\n'}
+[3.718768] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/path.sh\n'}
+[3.721783] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/environment/path.dsv\n'}
+[3.725197] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.bash\n'}
+[3.728146] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.sh\n'}
+[3.731416] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.zsh\n'}
+[3.734590] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/local_setup.dsv\n'}
+[3.737658] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.dsv\n'}
+[3.741125] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/ament_index/resource_index/packages/drobo_interfaces\n'}
+[3.744013] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.747017] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.750306] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.754562] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.758149] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.762214] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.765683] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.769699] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfacesConfig.cmake\n'}
+[3.773519] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfacesConfig-version.cmake\n'}
+[3.776400] (drobo_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.xml\n'}
+[3.780178] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_c.so\n'}
+[3.780693] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_c.so" to ""\n'}
+[3.780809] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.781260] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.781373] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.781792] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.781906] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_c.so\n'}
+[3.782402] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[3.782506] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.783009] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.783132] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.783588] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.783686] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_cpp.so\n'}
+[3.784117] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[3.807402] (-) TimerEvent: {}
+[3.817241] (drobo_interfaces) StdoutLine: {'line': b"Listing '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces'...\n"}
+[3.817394] (drobo_interfaces) StdoutLine: {'line': b"Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/__init__.py'...\n"}
+[3.817463] (drobo_interfaces) StdoutLine: {'line': b"Listing '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg'...\n"}
+[3.817527] (drobo_interfaces) StdoutLine: {'line': b"Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/__init__.py'...\n"}
+[3.817582] (drobo_interfaces) StdoutLine: {'line': b"Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_md_lib_msg.py'...\n"}
+[3.817638] (drobo_interfaces) StdoutLine: {'line': b"Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/msg/_sd_lib_msg.py'...\n"}
+[3.817701] (drobo_interfaces) StdoutLine: {'line': b"Listing '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv'...\n"}
+[3.817755] (drobo_interfaces) StdoutLine: {'line': b"Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/__init__.py'...\n"}
+[3.817805] (drobo_interfaces) StdoutLine: {'line': b"Compiling '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages/drobo_interfaces/srv/_solenoid_state_srv.py'...\n"}
+[3.820320] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_py.so\n'}
+[3.820847] (drobo_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/libdrobo_interfaces__rosidl_generator_py.so" to ""\n'}
+[3.820978] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.821173] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.821380] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.821581] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.821777] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.821978] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.822145] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.822349] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.822544] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.822781] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.822980] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.823174] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.823366] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.823563] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.823756] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/drobo_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.823951] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_pyExport.cmake\n'}
+[3.824149] (drobo_interfaces) StdoutLine: {'line': b'-- Installing: /home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/cmake/export_drobo_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.826142] (drobo_interfaces) CommandEnded: {'returncode': 0}
+[3.907486] (-) TimerEvent: {}
+[4.008192] (-) TimerEvent: {}
+[4.042167] (drobo_interfaces) JobEnded: {'identifier': 'drobo_interfaces', 'rc': 0}
+[4.042652] (swerve_drive_control) JobStarted: {'identifier': 'swerve_drive_control'}
+[4.076929] (swerve_drive_control) JobProgress: {'identifier': 'swerve_drive_control', 'progress': 'prepare'}
+[4.088580] (swerve_drive_control) JobProgress: {'identifier': 'swerve_drive_control', 'progress': 'build'}
+[4.088634] (swerve_drive_control) Command: {'cmd': ['/home/kariya/.cargo/bin/cargo', 'ament-build', '--install-base', '/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control', '--', '--manifest-path', '/home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control/Cargo.toml', '--target-dir', '/home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control', '--quiet', '--release'], 'cwd': PosixPath('src/swerve_drive_control'), 'env': OrderedDict([('USER', 'kariya'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kariya/Git'), ('HOME', '/home/kariya'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '1981'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ZPFX', '/home/kariya/.local/share/zinit/polaris'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kariya'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kariya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('ZSH_CACHE_DIR', '/home/kariya/.cache/zinit'), ('PMSPEC', '0uUpiPsf'), ('PATH', '/home/kariya/.local/share/zinit/plugins/paulirish---git-open:/opt/ros/humble/bin:/home/kariya/.local/share/zinit/polaris/bin:/home/kariya/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kariya-Inspiron-14-5425:@/tmp/.ICE-unix/1952,unix/kariya-Inspiron-14-5425:/tmp/.ICE-unix/1952'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9c1f2aee_3c3f_426e_a34e_8afdda157244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UTNMG2'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:/opt/ros/humble'), ('SHELL', '/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces')]), 'shell': False}
+[4.108273] (-) TimerEvent: {}
+[4.208497] (-) TimerEvent: {}
+[4.308827] (-) TimerEvent: {}
+[4.409211] (-) TimerEvent: {}
+[4.509562] (-) TimerEvent: {}
+[4.610079] (-) TimerEvent: {}
+[4.710487] (-) TimerEvent: {}
+[4.810941] (-) TimerEvent: {}
+[4.911279] (-) TimerEvent: {}
+[5.011636] (-) TimerEvent: {}
+[5.112018] (-) TimerEvent: {}
+[5.212443] (-) TimerEvent: {}
+[5.312861] (-) TimerEvent: {}
+[5.413316] (-) TimerEvent: {}
+[5.513879] (-) TimerEvent: {}
+[5.614253] (-) TimerEvent: {}
+[5.714716] (-) TimerEvent: {}
+[5.815134] (-) TimerEvent: {}
+[5.915454] (-) TimerEvent: {}
+[6.015795] (-) TimerEvent: {}
+[6.116116] (-) TimerEvent: {}
+[6.216411] (-) TimerEvent: {}
+[6.316709] (-) TimerEvent: {}
+[6.417006] (-) TimerEvent: {}
+[6.517336] (-) TimerEvent: {}
+[6.617635] (-) TimerEvent: {}
+[6.718299] (-) TimerEvent: {}
+[6.818611] (-) TimerEvent: {}
+[6.918991] (-) TimerEvent: {}
+[7.019339] (-) TimerEvent: {}
+[7.119676] (-) TimerEvent: {}
+[7.219981] (-) TimerEvent: {}
+[7.320266] (-) TimerEvent: {}
+[7.420553] (-) TimerEvent: {}
+[7.520847] (-) TimerEvent: {}
+[7.621187] (-) TimerEvent: {}
+[7.721496] (-) TimerEvent: {}
+[7.821811] (-) TimerEvent: {}
+[7.922092] (-) TimerEvent: {}
+[8.022406] (-) TimerEvent: {}
+[8.122730] (-) TimerEvent: {}
+[8.223023] (-) TimerEvent: {}
+[8.323322] (-) TimerEvent: {}
+[8.423617] (-) TimerEvent: {}
+[8.523900] (-) TimerEvent: {}
+[8.624209] (-) TimerEvent: {}
+[8.724498] (-) TimerEvent: {}
+[8.824789] (-) TimerEvent: {}
+[8.925071] (-) TimerEvent: {}
+[9.025358] (-) TimerEvent: {}
+[9.125648] (-) TimerEvent: {}
+[9.225937] (-) TimerEvent: {}
+[9.326227] (-) TimerEvent: {}
+[9.426492] (-) TimerEvent: {}
+[9.527297] (-) TimerEvent: {}
+[9.627576] (-) TimerEvent: {}
+[9.727859] (-) TimerEvent: {}
+[9.828141] (-) TimerEvent: {}
+[9.928429] (-) TimerEvent: {}
+[10.028720] (-) TimerEvent: {}
+[10.129053] (-) TimerEvent: {}
+[10.229711] (-) TimerEvent: {}
+[10.330155] (-) TimerEvent: {}
+[10.430474] (-) TimerEvent: {}
+[10.530796] (-) TimerEvent: {}
+[10.631070] (-) TimerEvent: {}
+[10.731418] (-) TimerEvent: {}
+[10.831938] (-) TimerEvent: {}
+[10.932353] (-) TimerEvent: {}
+[11.032774] (-) TimerEvent: {}
+[11.133372] (-) TimerEvent: {}
+[11.233699] (-) TimerEvent: {}
+[11.333990] (-) TimerEvent: {}
+[11.434271] (-) TimerEvent: {}
+[11.469746] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: unused import: `pr_info`\x1b[0m\n'}
+[11.470196] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:2:56\x1b[0m\n'}
+[11.470358] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.470499] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m2\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0m    context::Context, error::DynError, logger::Logger, pr_info\x1b[0m\n'}
+[11.470631] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m                                                       \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^\x1b[0m\n'}
+[11.470820] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.470924] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m= \x1b[0m\x1b[0m\x1b[1mnote\x1b[0m\x1b[0m: `#[warn(unused_imports)]` on by default\x1b[0m\n'}
+[11.470974] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.471025] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: unused import: `num_traits::pow::Pow`\x1b[0m\n'}
+[11.471074] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:5:5\x1b[0m\n'}
+[11.471124] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.471171] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m5\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0muse num_traits::pow::Pow;\x1b[0m\n'}
+[11.471219] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m    \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^^^^^^^^^^^^\x1b[0m\n'}
+[11.471266] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.478851] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: unused variable: `publisher`\x1b[0m\n'}
+[11.479009] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:25:9\x1b[0m\n'}
+[11.479070] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.479125] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m25\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0m    let publisher = node.create_publisher::<drobo_interfaces::msg::MdLibMsg>("md_driver_topic", None)?;\x1b[0m\n'}
+[11.479180] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m        \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[33mhelp: if this is intentional, prefix it with an underscore: `_publisher`\x1b[0m\n'}
+[11.479231] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.479285] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m= \x1b[0m\x1b[0m\x1b[1mnote\x1b[0m\x1b[0m: `#[warn(unused_variables)]` on by default\x1b[0m\n'}
+[11.479348] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.479400] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: unused variable: `logger`\x1b[0m\n'}
+[11.479450] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:28:9\x1b[0m\n'}
+[11.479501] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.479550] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m28\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0m    let logger = Logger::new("swere_drive_control");\x1b[0m\n'}
+[11.479600] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m        \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[33mhelp: if this is intentional, prefix it with an underscore: `_logger`\x1b[0m\n'}
+[11.479648] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.479694] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: unused variable: `msg`\x1b[0m\n'}
+[11.479741] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:30:13\x1b[0m\n'}
+[11.479788] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.479839] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m30\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();\x1b[0m\n'}
+[11.479902] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m            \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[33mhelp: if this is intentional, prefix it with an underscore: `_msg`\x1b[0m\n'}
+[11.479951] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.480491] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: variable does not need to be mutable\x1b[0m\n'}
+[11.480614] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:30:9\x1b[0m\n'}
+[11.480689] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.480819] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m30\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();\x1b[0m\n'}
+[11.480878] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m        \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m----\x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^\x1b[0m\n'}
+[11.480929] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m        \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.480988] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m        \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12mhelp: remove this `mut`\x1b[0m\n'}
+[11.481043] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.481095] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m= \x1b[0m\x1b[0m\x1b[1mnote\x1b[0m\x1b[0m: `#[warn(unused_mut)]` on by default\x1b[0m\n'}
+[11.481142] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.481190] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: unused variable: `speed_abs`\x1b[0m\n'}
+[11.481238] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:40:9\x1b[0m\n'}
+[11.481292] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.481337] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m40\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0m    let speed_abs: f64 = (_xrpm*_xrpm +_yrpm*_yrpm).sqrt();\x1b[0m\n'}
+[11.481384] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m        \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[33mhelp: if this is intentional, prefix it with an underscore: `_speed_abs`\x1b[0m\n'}
+[11.481432] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.481479] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: unused variable: `rad`\x1b[0m\n'}
+[11.481526] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:41:9\x1b[0m\n'}
+[11.481574] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.481620] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m41\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0m    let rad: f64 = _yrpm.atan2(_xrpm);\x1b[0m\n'}
+[11.481666] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m        \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[33mhelp: if this is intentional, prefix it with an underscore: `_rad`\x1b[0m\n'}
+[11.481730] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.483236] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: constant `WHEEL_DIA` is never used\x1b[0m\n'}
+[11.483324] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:9:8\x1b[0m\n'}
+[11.483386] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.483441] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m9\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0mconst  WHEEL_DIA: f64 = 0.100;      //\xe3\x83\x9b\xe3\x82\xa4\xe3\x83\xbc\xe3\x83\xab\xe3\x81\xae\xe7\x9b\xb4\xe5\xbe\x84\xef\xbc\xbbm\xef\xbc\xbd\x1b[0m\n'}
+[11.483505] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m       \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^\x1b[0m\n'}
+[11.483555] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.483603] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m= \x1b[0m\x1b[0m\x1b[1mnote\x1b[0m\x1b[0m: `#[warn(dead_code)]` on by default\x1b[0m\n'}
+[11.483651] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.483697] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: constant `ROBOT_CENTER_TO_WHEEL_DISTANCE` is never used\x1b[0m\n'}
+[11.483745] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:10:8\x1b[0m\n'}
+[11.483792] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.483838] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m10\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0mconst  ROBOT_CENTER_TO_WHEEL_DISTANCE: f64 = 0.37;  //\xe3\x83\xad\xe3\x83\x9c\xe3\x83\x83\xe3\x83\x88\xe3\x81\xae\xe4\xb8\xad\xe5\xbf\x83\xe3\x81\x8b\xe3\x82\x89\xe3\x83\x9b\xe3\x82\xa4\xe3\x83\xbc\xe3\x83\xab\xe3\x81\xbe\xe3\x81\xa7\xe3\x81\xae\xe8\xb7\x9d\xe9\x9b\xa2[m]\x1b[0m\n'}
+[11.483888] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m       \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\x1b[0m\n'}
+[11.483945] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.484013] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: struct `Component` is never constructed\x1b[0m\n'}
+[11.484062] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:12:8\x1b[0m\n'}
+[11.484110] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.484157] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m12\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0mstruct Component {\x1b[0m\n'}
+[11.484204] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m       \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^\x1b[0m\n'}
+[11.484250] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.484297] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: function `move_chassis` is never used\x1b[0m\n'}
+[11.484343] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:39:4\x1b[0m\n'}
+[11.484389] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.484435] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m39\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0mfn move_chassis(_xrpm: f64, _yrpm: f64, _yaw: f64) {\x1b[0m\n'}
+[11.484481] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^^^^\x1b[0m\n'}
+[11.484526] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.484571] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: function `move_wheel` is never used\x1b[0m\n'}
+[11.484616] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:82:4\x1b[0m\n'}
+[11.484661] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.484705] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m82\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0mfn move_wheel(_wheel_yaw: f64, _power: i64){\x1b[0m\n'}
+[11.484751] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^^^\x1b[0m\n'}
+[11.484796] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.484841] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[33mwarning\x1b[0m\x1b[0m\x1b[1m: function `send_pwm` is never used\x1b[0m\n'}
+[11.484886] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m  \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m--> \x1b[0m\x1b[0msrc/main.rs:87:4\x1b[0m\n'}
+[11.484931] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\n'}
+[11.484976] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m\x1b[1m\x1b[38;5;12m87\x1b[0m\x1b[0m \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m|\x1b[0m\x1b[0m \x1b[0m\x1b[0mfn send_pwm(_adress: u8, _semi_id: u8, _phase: bool, _power: u16){\x1b[0m\n'}
+[11.485021] (swerve_drive_control) StderrLine: {'line': b'\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[38;5;12m| \x1b[0m\x1b[0m   \x1b[0m\x1b[0m\x1b[1m\x1b[33m^^^^^^^^\x1b[0m\n'}
+[11.485073] (swerve_drive_control) StderrLine: {'line': b'\n'}
+[11.534386] (-) TimerEvent: {}
+[11.634691] (-) TimerEvent: {}
+[11.735193] (-) TimerEvent: {}
+[11.835501] (-) TimerEvent: {}
+[11.865347] (swerve_drive_control) CommandEnded: {'returncode': 0}
+[11.887718] (swerve_drive_control) JobEnded: {'identifier': 'swerve_drive_control', 'rc': 0}
+[11.888285] (-) EventReactorShutdown: {}
