@@ -13,29 +13,35 @@
 [0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^[0m
 
 [0m[1m[33mwarning[0m[0m[1m: unused variable: `publisher`[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:25:9[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:28:9[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m25[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let publisher = node.create_publisher::<drobo_interfaces::msg::MdLibMsg>("md_driver_topic", None)?;[0m
+[0m[1m[38;5;12m28[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let publisher = node.create_publisher::<drobo_interfaces::msg::MdLibMsg>("md_driver_topic", None)?;[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_publisher`[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
 [0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_variables)]` on by default[0m
 
 [0m[1m[33mwarning[0m[0m[1m: unused variable: `logger`[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:28:9[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:31:9[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m28[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let logger = Logger::new("swere_drive_control");[0m
+[0m[1m[38;5;12m31[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let logger = Logger::new("swere_drive_control");[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_logger`[0m
 
 [0m[1m[33mwarning[0m[0m[1m: unused variable: `msg`[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:30:13[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:33:13[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m30[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();[0m
+[0m[1m[38;5;12m33[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m            [0m[0m[1m[33m^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_msg`[0m
 
-[0m[1m[33mwarning[0m[0m[1m: variable does not need to be mutable[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:30:9[0m
+[0m[1m[33mwarning[0m[0m[1m: unused variable: `msg`[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:39:24[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m30[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();[0m
+[0m[1m[38;5;12m39[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m        Box::new(move |msg| {[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m                       [0m[0m[1m[33m^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_msg`[0m
+
+[0m[1m[33mwarning[0m[0m[1m: variable does not need to be mutable[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:33:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m33[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[38;5;12m----[0m[0m[1m[33m^^^[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[38;5;12m|[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[38;5;12mhelp: remove this `mut`[0m
@@ -43,15 +49,15 @@
 [0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_mut)]` on by default[0m
 
 [0m[1m[33mwarning[0m[0m[1m: unused variable: `speed_abs`[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:40:9[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:50:9[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m40[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let speed_abs: f64 = (_xrpm*_xrpm +_yrpm*_yrpm).sqrt();[0m
+[0m[1m[38;5;12m50[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let speed_abs: f64 = (_xrpm*_xrpm +_yrpm*_yrpm).sqrt();[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_speed_abs`[0m
 
 [0m[1m[33mwarning[0m[0m[1m: unused variable: `rad`[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:41:9[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:51:9[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m41[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let rad: f64 = _yrpm.atan2(_xrpm);[0m
+[0m[1m[38;5;12m51[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let rad: f64 = _yrpm.atan2(_xrpm);[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^[0m[0m [0m[0m[1m[33mhelp: if this is intentional, prefix it with an underscore: `_rad`[0m
 
 [0m[1m[33mwarning[0m[0m[1m: constant `WHEEL_DIA` is never used[0m
@@ -75,20 +81,20 @@
 [0m   [0m[0m[1m[38;5;12m| [0m[0m       [0m[0m[1m[33m^^^^^^^^^[0m
 
 [0m[1m[33mwarning[0m[0m[1m: function `move_chassis` is never used[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:39:4[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:49:4[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m39[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn move_chassis(_xrpm: f64, _yrpm: f64, _yaw: f64) {[0m
+[0m[1m[38;5;12m49[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn move_chassis(_xrpm: f64, _yrpm: f64, _yaw: f64) {[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m   [0m[0m[1m[33m^^^^^^^^^^^^[0m
 
 [0m[1m[33mwarning[0m[0m[1m: function `move_wheel` is never used[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:82:4[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:92:4[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m82[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn move_wheel(_wheel_yaw: f64, _power: i64){[0m
+[0m[1m[38;5;12m92[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn move_wheel(_wheel_yaw: f64, _power: i64){[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m   [0m[0m[1m[33m^^^^^^^^^^[0m
 
 [0m[1m[33mwarning[0m[0m[1m: function `send_pwm` is never used[0m
-[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:87:4[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:97:4[0m
 [0m   [0m[0m[1m[38;5;12m|[0m
-[0m[1m[38;5;12m87[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn send_pwm(_adress: u8, _semi_id: u8, _phase: bool, _power: u16){[0m
+[0m[1m[38;5;12m97[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0mfn send_pwm(_adress: u8, _semi_id: u8, _phase: bool, _power: u16){[0m
 [0m   [0m[0m[1m[38;5;12m| [0m[0m   [0m[0m[1m[33m^^^^^^^^[0m
 

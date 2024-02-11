@@ -3,7 +3,7 @@ use safe_drive::{
 };
 
 use num_traits::pow::Pow;
-
+use safe_drive::msg::common_interfaces::geometry_msgs::msg;
 use core::f64::consts::PI;
 
 const  WHEEL_DIA: f64 = 0.100;      //ホイールの直径［m］
@@ -21,6 +21,9 @@ fn main() -> Result<(), DynError> {
     // Create a node.
     let node = ctx.create_node("swere_drive_control", None, Default::default())?;
 
+    //Create a subscriber.
+    let subscriber = node.create_subscriber::<msg::Twist>("cmd_vel", None)?;
+
     // Create a publisher.
     let publisher = node.create_publisher::<drobo_interfaces::msg::MdLibMsg>("md_driver_topic", None)?;
 
@@ -30,6 +33,13 @@ fn main() -> Result<(), DynError> {
     let mut msg = drobo_interfaces::msg::MdLibMsg::new().unwrap();
 
     let mut selector = ctx.create_selector()?;
+
+    selector.add_subscriber(
+        subscriber, 
+        Box::new(move |msg| {
+            
+        }),
+    );
 
     loop {
         selector.wait()?;

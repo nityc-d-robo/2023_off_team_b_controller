@@ -1,0 +1,34 @@
+[0.073s] Invoking command in 'src/swerve_drive_control': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/kariya/.cargo/bin/cargo ament-build --install-base /home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control -- --manifest-path /home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control/Cargo.toml --target-dir /home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control --quiet --release
+[9.040s] [0m[1m[38;5;9merror[E0433][0m[0m[1m: failed to resolve: use of undeclared crate or module `geometry_msgs`[0m
+[9.040s] [0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:25:47[0m
+[9.040s] [0m   [0m[0m[1m[38;5;12m|[0m
+[9.041s] [0m[1m[38;5;12m25[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    let subscriber = node.create_subscriber::<geometry_msgs::msg::Twist>("cmd_vel", None)?;[0m
+[9.041s] [0m   [0m[0m[1m[38;5;12m| [0m[0m                                              [0m[0m[1m[38;5;9m^^^^^^^^^^^^^[0m[0m [0m[0m[1m[38;5;9muse of undeclared crate or module `geometry_msgs`[0m
+[9.041s] [0m   [0m[0m[1m[38;5;12m|[0m
+[9.041s] [0m[1m[38;5;14mhelp[0m[0m: consider importing this module[0m
+[9.041s] [0m   [0m[0m[1m[38;5;12m|[0m
+[9.041s] [0m[1m[38;5;12m1[0m[0m  [0m[0m[38;5;10m+ use safe_drive::msg::common_interfaces::geometry_msgs::msg;[0m
+[9.041s] [0m   [0m[0m[1m[38;5;12m|[0m
+[9.041s] [0m[1m[38;5;14mhelp[0m[0m: if you import `msg`, refer to it directly[0m
+[9.041s] [0m   [0m[0m[1m[38;5;12m|[0m
+[9.041s] [0m[1m[38;5;12m25[0m[0m [0m[0m[38;5;9m- [0m[0m    let subscriber = node.create_subscriber::<[0m[0m[38;5;9mgeometry_msgs::[0m[0mmsg::Twist>("cmd_vel", None)?;[0m
+[9.041s] [0m[1m[38;5;12m25[0m[0m [0m[0m[38;5;10m+ [0m[0m    let subscriber = node.create_subscriber::<msg::Twist>("cmd_vel", None)?;[0m
+[9.041s] [0m   [0m[0m[1m[38;5;12m|[0m
+[9.041s] 
+[9.041s] [0m[1m[33mwarning[0m[0m[1m: unused import: `pr_info`[0m
+[9.041s] [0m [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:2:56[0m
+[9.041s] [0m  [0m[0m[1m[38;5;12m|[0m
+[9.041s] [0m[1m[38;5;12m2[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0m    context::Context, error::DynError, logger::Logger, pr_info[0m
+[9.041s] [0m  [0m[0m[1m[38;5;12m| [0m[0m                                                       [0m[0m[1m[33m^^^^^^^[0m
+[9.041s] [0m  [0m[0m[1m[38;5;12m|[0m
+[9.041s] [0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(unused_imports)]` on by default[0m
+[9.041s] 
+[9.042s] [0m[1m[33mwarning[0m[0m[1m: unused import: `num_traits::pow::Pow`[0m
+[9.042s] [0m [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:5:5[0m
+[9.042s] [0m  [0m[0m[1m[38;5;12m|[0m
+[9.042s] [0m[1m[38;5;12m5[0m[0m [0m[0m[1m[38;5;12m|[0m[0m [0m[0muse num_traits::pow::Pow;[0m
+[9.042s] [0m  [0m[0m[1m[38;5;12m| [0m[0m    [0m[0m[1m[33m^^^^^^^^^^^^^^^^^^^^[0m
+[9.042s] 
+[9.056s] [0m[1mFor more information about this error, try `rustc --explain E0433`.[0m
+[9.059s] [1m[31merror[0m[1m:[0m could not compile `swerve_drive_control` (bin "swerve_drive_control") due to previous error; 2 warnings emitted
+[9.063s] Invoked command in 'src/swerve_drive_control' returned '1': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/kariya/.cargo/bin/cargo ament-build --install-base /home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control -- --manifest-path /home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control/Cargo.toml --target-dir /home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control --quiet --release

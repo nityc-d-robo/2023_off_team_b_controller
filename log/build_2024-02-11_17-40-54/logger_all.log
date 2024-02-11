@@ -1,0 +1,262 @@
+[1.284s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cargo-args', '--release']
+[1.284s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], lookup_in_workspace=False, cargo_args=['--release'], clean_build=False, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc42896fee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc4289b2fe0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc4289b2fe0>>)
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.361s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.361s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kariya/Git/2023_off_team_b_controller'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ament_cargo']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ament_cargo'
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.361s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cargo', 'cmake', 'python']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cargo'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ament_cargo']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ament_cargo'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cargo', 'cmake', 'python']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cargo'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extensions ['ignore', 'ignore_ament_install']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extension 'ignore'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extension 'ignore_ament_install'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extensions ['colcon_pkg']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extension 'colcon_pkg'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extensions ['colcon_meta']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extension 'colcon_meta'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extensions ['ament_cargo']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extension 'ament_cargo'
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extensions ['ros']
+[1.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller_2023_b_launch) by extension 'ros'
+[1.379s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller_2023_b_launch' with type 'ros.ament_cmake' and name 'controller_2023_b_launch'
+[1.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extension 'ignore'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extension 'ignore_ament_install'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extensions ['colcon_pkg']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extension 'colcon_pkg'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extensions ['colcon_meta']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extension 'colcon_meta'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extensions ['ament_cargo']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extension 'ament_cargo'
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extensions ['ros']
+[1.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/drobo_interfaces) by extension 'ros'
+[1.381s] DEBUG:colcon.colcon_core.package_identification:Package 'src/drobo_interfaces' with type 'ros.ament_cmake' and name 'drobo_interfaces'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extensions ['ignore', 'ignore_ament_install']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extension 'ignore'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extension 'ignore_ament_install'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extensions ['colcon_pkg']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extension 'colcon_pkg'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extensions ['colcon_meta']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extension 'colcon_meta'
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extensions ['ament_cargo']
+[1.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/swerve_drive_control) by extension 'ament_cargo'
+[1.382s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swerve_drive_control' with type 'ament_cargo' and name 'swerve_drive_control'
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.481s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.481s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.514s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[1.516s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'lookup_in_workspace' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'cargo_args' from command line to '['--release']'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'clean_build' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'cmake_target' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'cmake_clean_first' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'cmake_force_configure' from command line to 'False'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'ament_cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[1.609s] Level 5:colcon.colcon_core.verb:set package 'controller_2023_b_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.609s] DEBUG:colcon.colcon_core.verb:Building package 'controller_2023_b_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch', 'cargo_args': ['--release'], 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/kariya/Git/2023_off_team_b_controller/src/controller_2023_b_launch', 'symlink_install': True, 'test_result_base': None}
+[1.624s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'lookup_in_workspace' from command line to 'False'
+[1.624s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'cargo_args' from command line to '['--release']'
+[1.624s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'clean_build' from command line to 'False'
+[1.624s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.625s] Level 5:colcon.colcon_core.verb:set package 'drobo_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.625s] DEBUG:colcon.colcon_core.verb:Building package 'drobo_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces', 'cargo_args': ['--release'], 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'lookup_in_workspace' from command line to 'False'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'cargo_args' from command line to '['--release']'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'clean_build' from command line to 'False'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'cmake_args' from command line to 'None'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'cmake_target' from command line to 'None'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'cmake_clean_first' from command line to 'False'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'cmake_force_configure' from command line to 'False'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'ament_cmake_args' from command line to 'None'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.640s] Level 5:colcon.colcon_core.verb:set package 'swerve_drive_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.640s] DEBUG:colcon.colcon_core.verb:Building package 'swerve_drive_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control', 'cargo_args': ['--release'], 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control', 'symlink_install': True, 'test_result_base': None}
+[1.655s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.671s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.671s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces' with build type 'ament_cmake'
+[1.671s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces'
+[1.697s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.697s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.731s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kariya/Git/2023_off_team_b_controller/src/controller_2023_b_launch' with build type 'ament_cmake'
+[1.731s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kariya/Git/2023_off_team_b_controller/src/controller_2023_b_launch'
+[1.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.746s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.781s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces
+[1.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/controller_2023_b_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch
+[2.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/controller_2023_b_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch
+[2.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch -- -j16 -l16
+[2.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch -- -j16 -l16
+[2.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch
+[2.942s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_2023_b_launch)
+[2.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch
+[2.963s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch' for CMake module files
+[2.964s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch' for CMake config files
+[2.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_2023_b_launch', 'cmake_prefix_path')
+[2.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/hook/cmake_prefix_path.ps1'
+[2.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/hook/cmake_prefix_path.dsv'
+[2.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/hook/cmake_prefix_path.sh'
+[2.982s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/bin'
+[2.982s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/lib/pkgconfig/controller_2023_b_launch.pc'
+[2.983s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/lib/python3.10/site-packages'
+[2.983s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/bin'
+[2.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.ps1'
+[2.999s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.dsv'
+[3.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.sh'
+[3.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.bash'
+[3.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.zsh'
+[3.003s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/colcon-core/packages/controller_2023_b_launch)
+[3.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller_2023_b_launch)
+[3.070s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch' for CMake module files
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch' for CMake config files
+[3.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller_2023_b_launch', 'cmake_prefix_path')
+[3.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/hook/cmake_prefix_path.ps1'
+[3.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/hook/cmake_prefix_path.dsv'
+[3.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/hook/cmake_prefix_path.sh'
+[3.088s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/bin'
+[3.088s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/lib/pkgconfig/controller_2023_b_launch.pc'
+[3.089s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/lib/python3.10/site-packages'
+[3.089s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/bin'
+[3.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.ps1'
+[3.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.dsv'
+[3.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.sh'
+[3.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.bash'
+[3.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/controller_2023_b_launch/package.zsh'
+[3.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kariya/Git/2023_off_team_b_controller/install/controller_2023_b_launch/share/colcon-core/packages/controller_2023_b_launch)
+[3.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kariya/Git/2023_off_team_b_controller/src/drobo_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces
+[3.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces -- -j16 -l16
+[6.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces -- -j16 -l16
+[6.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces
+[6.774s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drobo_interfaces)
+[6.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces
+[6.791s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces' for CMake module files
+[6.791s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces' for CMake config files
+[6.793s] Level 1:colcon.colcon_core.shell:create_environment_hook('drobo_interfaces', 'cmake_prefix_path')
+[6.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/cmake_prefix_path.ps1'
+[6.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/cmake_prefix_path.dsv'
+[6.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/cmake_prefix_path.sh'
+[6.809s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib'
+[6.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('drobo_interfaces', 'ld_library_path_lib')
+[6.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/ld_library_path_lib.ps1'
+[6.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/ld_library_path_lib.dsv'
+[6.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/ld_library_path_lib.sh'
+[6.826s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/bin'
+[6.826s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/pkgconfig/drobo_interfaces.pc'
+[6.826s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/python3.10/site-packages'
+[6.826s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/bin'
+[6.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.ps1'
+[6.842s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.dsv'
+[6.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.sh'
+[6.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.bash'
+[6.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.zsh'
+[6.843s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/colcon-core/packages/drobo_interfaces)
+[7.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(drobo_interfaces)
+[7.015s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces' for CMake module files
+[7.016s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces' for CMake config files
+[7.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('drobo_interfaces', 'cmake_prefix_path')
+[7.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/cmake_prefix_path.ps1'
+[7.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/cmake_prefix_path.dsv'
+[7.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/cmake_prefix_path.sh'
+[7.034s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib'
+[7.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('drobo_interfaces', 'ld_library_path_lib')
+[7.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/ld_library_path_lib.ps1'
+[7.050s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/ld_library_path_lib.dsv'
+[7.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/hook/ld_library_path_lib.sh'
+[7.050s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/bin'
+[7.050s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/pkgconfig/drobo_interfaces.pc'
+[7.051s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib/python3.10/site-packages'
+[7.051s] Level 1:colcon.colcon_core.environment:checking '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/bin'
+[7.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.ps1'
+[7.067s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.dsv'
+[7.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.sh'
+[7.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.bash'
+[7.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/drobo_interfaces/package.zsh'
+[7.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/share/colcon-core/packages/drobo_interfaces)
+[7.069s] INFO:colcon.colcon_cargo.task.cargo.build:Building Cargo package in '/home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control'
+[7.084s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.084s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.124s] Level 1:colcon.colcon_core.shell:create_environment_hook('swerve_drive_control', 'ament_prefix_path')
+[7.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control/share/swerve_drive_control/hook/ament_prefix_path.ps1'
+[7.140s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control/share/swerve_drive_control/hook/ament_prefix_path.dsv'
+[7.140s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control/share/swerve_drive_control/hook/ament_prefix_path.sh'
+[7.143s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in 'src/swerve_drive_control': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/kariya/.cargo/bin/cargo ament-build --install-base /home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control -- --manifest-path /home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control/Cargo.toml --target-dir /home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control --quiet --release
+[16.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in 'src/swerve_drive_control' returned '1': AMENT_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces LD_LIBRARY_PATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kariya/Git/2023_off_team_b_controller/install/drobo_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /home/kariya/.cargo/bin/cargo ament-build --install-base /home/kariya/Git/2023_off_team_b_controller/install/swerve_drive_control -- --manifest-path /home/kariya/Git/2023_off_team_b_controller/src/swerve_drive_control/Cargo.toml --target-dir /home/kariya/Git/2023_off_team_b_controller/build/swerve_drive_control --quiet --release
+[16.142s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.143s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.143s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[16.143s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.159s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.159s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.159s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.176s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.187s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kariya/Git/2023_off_team_b_controller/install/local_setup.ps1'
+[16.187s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kariya/Git/2023_off_team_b_controller/install/_local_setup_util_ps1.py'
+[16.188s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kariya/Git/2023_off_team_b_controller/install/setup.ps1'
+[16.199s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kariya/Git/2023_off_team_b_controller/install/local_setup.sh'
+[16.199s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kariya/Git/2023_off_team_b_controller/install/_local_setup_util_sh.py'
+[16.200s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kariya/Git/2023_off_team_b_controller/install/setup.sh'
+[16.210s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kariya/Git/2023_off_team_b_controller/install/local_setup.bash'
+[16.211s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kariya/Git/2023_off_team_b_controller/install/setup.bash'
+[16.221s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kariya/Git/2023_off_team_b_controller/install/local_setup.zsh'
+[16.221s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kariya/Git/2023_off_team_b_controller/install/setup.zsh'
