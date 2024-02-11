@@ -1,1 +1,0 @@
-/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces/rosidl_typesupport_introspection_cpp/drobo_interfaces/msg/detail/sd_lib_msg__rosidl_typesupport_introspection_cpp.hpp

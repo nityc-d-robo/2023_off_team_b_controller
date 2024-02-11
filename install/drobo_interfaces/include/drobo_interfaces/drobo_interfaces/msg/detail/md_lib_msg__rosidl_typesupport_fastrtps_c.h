@@ -1,1 +1,0 @@
-/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces/rosidl_typesupport_fastrtps_c/drobo_interfaces/msg/detail/md_lib_msg__rosidl_typesupport_fastrtps_c.h

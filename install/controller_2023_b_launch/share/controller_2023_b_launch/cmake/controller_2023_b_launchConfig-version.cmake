@@ -1,1 +1,0 @@
-/home/kariya/Git/2023_off_team_b_controller/build/controller_2023_b_launch/ament_cmake_core/controller_2023_b_launchConfig-version.cmake

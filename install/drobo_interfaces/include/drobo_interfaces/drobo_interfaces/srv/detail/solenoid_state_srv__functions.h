@@ -1,1 +1,0 @@
-/home/kariya/Git/2023_off_team_b_controller/build/drobo_interfaces/rosidl_generator_c/drobo_interfaces/srv/detail/solenoid_state_srv__functions.h
