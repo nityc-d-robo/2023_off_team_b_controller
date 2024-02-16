@@ -18,5 +18,8 @@
     </node>
     <!-- swerve_drive_control -->
     <node pkg="differential_two_wheel_control" exec="differential_two_wheel_control"/>
+
+    <!-- injection_2023_b -->
+    <node pkg="injection_2023_b" exec="injection_2023_b"/>
     
 </launch>
