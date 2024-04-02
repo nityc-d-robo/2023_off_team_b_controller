@@ -4,3 +4,6 @@
 [submodule "swerve_drive_control"]
 	path = swerve_drive_control
 	url = https://github.com/nityc-d-robo/swerve_drive_control
+[submodule "src/swerve_drive_control"]
+	path = src/swerve_drive_control
+	url = https://github.com/nityc-d-robo/swerve_drive_control
